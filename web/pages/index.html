@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Options</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style media="screen" type="text/css">
+
+        body {
+
+            background-color: rgb(55, 49, 43);
+
+        }
+
+        .footer-button {
+            margin-bottom: 50px;
+            width: 300px;
+            height: 70px;
+            font-size: 22px;
+            background-color: #fffc82;
+            color: #37312b;
+            border: 1px solid #fffc82;
+            outline: none;
+        }
+
+        .footer-button:hover {
+            background-color: #ffcc5b;
+        }
+
+        .footer-button:active {
+            background-color: #ffb44e;
+        }
+
+        .input-area2 {
+            width: 300px !important;
+            height: 50px;
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="container-fluid" style="text-align: center; margin-top: 80px; ">
+
+
+    <div class="col-xs-6">
+
+        <form action="/servlet/StudentInfo" method="post" id="getCurrent">
+                <input type="text" name="name" class="form-control input-area2" placeholder="Student name" form="getCurrent" required>
+                <input type="submit" value="View Grades" class="footer-button">
+        </form>
+
+    </div>
+    <div class="col-xs-6">
+            <form action="/servlet/StudentInfo" method="get" id="getAll">
+                <input type="submit" value="View Students" class="footer-button">
+            </form>
+    </div>
+</div>
+
+
+</body>
+</html>
